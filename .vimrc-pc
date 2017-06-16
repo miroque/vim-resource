@@ -1,0 +1,46 @@
+" Обязательыне настройки для менеджера плагинов
+" Взято с этого ресурса ресурса https://habrahabr.ru/post/148549/
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+
+filetype plugin indent on
+
+" сверху ^ это настройки для Вундла
+
+" настроечка для айрлайн
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+let g:airline_theme='molokai'
+" let g:airline_theme='solarized'
+
+" а ниже это настройки уже самой софтины
+set fileencodings=utf-8,cp1251
+set clipboard=unnamed
+
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+set guifont=Consolas:h10:cRUSSIAN
+
+syntax enable
+set background=light
+let g:molokai_original = 1
+colorscheme molokai
+" colorscheme solarized
+
+
+set nowrap
+set tw=0
+set number
+
+autocmd GUIEnter * simalt ~x
