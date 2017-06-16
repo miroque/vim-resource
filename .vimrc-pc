@@ -25,7 +25,7 @@ let g:airline_theme='molokai'
 
 " а ниже это настройки уже самой софтины
 set fileencodings=utf-8,cp1251
-set clipboard=unnamed
+set clipboard=unnamed " чтоб работал ctr+c ctr+p и стандартный буфер винды
 
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim

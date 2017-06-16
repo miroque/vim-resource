@@ -1,9 +1,9 @@
 .NERDTreeBookmarks
 ._vimrc.un~
-.vim/
 _viminfo
 _vimrc~
 gVimPortableSettings.ini
 vimfiles/
 *.swo
 *.swp
+.*~
