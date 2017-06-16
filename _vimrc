@@ -65,7 +65,6 @@ colorscheme solarized
 set nowrap
 set tw=0
 set number
-au GUIEnter * simalt ~x
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%121v.\+/
 

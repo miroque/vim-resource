@@ -42,5 +42,7 @@ colorscheme molokai
 set nowrap
 set tw=0
 set number
-
+if has("gui_running")
+	set lines=40 columns=120
+endif
 autocmd GUIEnter * simalt ~x
